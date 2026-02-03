@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #hero{
+            background-color: rgb(243, 243, 243);
+            text-align: center;
+        }
+        .nav{
+            background-color: rgb(255, 174, 24);
+            box-shadow: 5px 10px 15px -3px rgba(0,0,0,0.1);
+            padding: 0 10px;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        #logo{
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+
+        }
+        .menu a{
+            text-decoration: none;
+            margin: 0 9px;
+            padding: 8px;
+            border-radius: 5px;
+            transition: all;
+            transition-duration: 1s;
+
+        }
+
+
+
+
+
+
+
+
+
+         .menu a:hover{
+            background-color: rgb(211, 37, 37);
+
+            
+        }
+        button{
+            background-color: rgb(255, 255, 255);
+            border: none;
+            padding: 5px 15px;
+            font-size: 17px;
+            border-radius: 5px;
+        }
+        .container{
+            
+           min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: rgb(243, 243, 243);
+            
+
+        }
+        .card{
+            flex-basis: 250px;
+            height: 240px;
+            border: 1px solid rgb(195, 195, 195);
+            padding:2px 4px;
+            background-color: white;
+            transition: all;
+            transition-duration: 2s;
+           
+            animation-name: cardanimation;
+            /* animation-timing-function: ease-in; */
+
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 10s; */
+
+        }
+        .card:hover{
+            box-shadow: 8px 12px 15px -3px rgba(0,0,0,0.1);
+            /* margin-top: -5px; */
+            transform: rotate(360deg);
+        }
+        .card img{
+            width: 100%;
+            height: 60%;
+            object-fit: contain;
+
+
+        }
+          .card p{
+            font-size: 20px;
+            margin: 10px;
+          }
+          .card a{
+            text-decoration: none;
+            /* margin-top: 50px; */
+            color: white;
+            background-color: rgb(255, 174, 24);
+            padding: 5px 10px;
+            border-radius: 5px;
+            
+          }
+        
+     /* @keyframes cardanimation {
+        0%{
+            background-color: blue;
+        }
+        25%{
+            background-color: green;
+            
+        }
+        50%{
+            background-color: yellow;
+            
+        }
+        75%{
+            background-color: orange;
+            
+        }
+        100%{
+            background-color: red;
+            
+        }
+
+        
+     } */
+      
+    </style>
+</head>
+<body>
+
+
+    <div class="nav">
+        <a href="" id="logo">Daraz</a>
+
+        <div class="menu">
+            <a href="">Home</a>
+            <a href="">Service</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Follow</a>
+        </div>
+
+
+        <button>Login</button>
+    </div>
+    
+    
+    <div class="container">
+        <div class="card">
+            <img src="./pngegg.png" alt="">
+            
+            <p>large pizza  <span style="color: olivedrab; font-size: 21px;">2$ <del>5$</del></span></p>
+            <a href="">Add to Cart</a>
+        </div>
+        <div class="card">
+            <img src="./pngegg.png" alt="">
+            
+            <p>large pizza  <span style="color: olivedrab; font-size: 21px;">2$ <del>5$</del></span></p>
+            <a href="">Add to Cart</a>
+        </div>
+        <div class="card">
+            <img src="./pngegg.png" alt="">
+            
+            <p>large pizza  <span style="color: olivedrab; font-size: 21px;">2$ <del>5$</del></span></p>
+            <a href="">Add to Cart</a>
+        </div>
+        <div class="card">
+            <img src="./pngegg.png" alt="">
+            
+            <p>large pizza  <span style="color: olivedrab; font-size: 21px;">2$ <del>5$</del></span></p>
+            <a href="">Add to Cart</a>
+        </div>
+        <div class="card">
+            <img src="./pngegg.png" alt="">
+            
+            <p>large pizza  <span style="color: olivedrab; font-size: 21px;">2$ <del>5$</del></span></p>
+            <a href="">Add to Cart</a>
+        </div>
+        <div class="card">
+            <img src="./pngegg.png" alt="">
+            
+            <p>large pizza  <span style="color: olivedrab; font-size: 21px;">2$ <del>5$</del></span></p>
+            <a href="">Add to Cart</a>
+        </div>
+    </div>
+    
+   
+
+
+    
+</body>
+</html>
